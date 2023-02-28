@@ -1,0 +1,18 @@
+  Aqui está o raciocínio que usei para responder a questão 23 do primeiro capítulo do livro Fundamentos Matemáticos para a Ciência da Computação.
+  
+  25. Em um determinado país, todos os habitantes são ou um contador de verdade que sempre fala a verdade
+ou mentirosos que sempre mentem. Viajando neste país, você encontra dois habitantes, Percival e Llewe-
+llyn. Percival diz "Se eu for um contador de verdades, Llewellyn também é um contador de verdades".
+Percival é um mentiroso ou um contador de verdade? E Llewellyn?
+
+ A sentença "Se eu for um contador de verdades, Llewellyn também é um contador de verdades" é uma wff do tipo A -> B (A implica em B). Como não 
+tenho ideia de como analisar uma implicação diretamente, vou usar uma de seus tautologias. Para tanto, A' || B (não A ou B) é suficiente. Considero
+a sentença como sendo verdadeira, isto é, Percival disse a verdade. Se Percival disse a verdade, então ele, que será o símbolo proposicional A, será ver
+dadeiro. Portanto, como considero a sentença sendo verdadeira, A' || B deve ser verdade. Como sei que A é verdadeiro, A' é falsa. E para respeitar a 
+veracidade da expressão, devo concluir que B é verdadeiro também. E até aqui nenhuma contradição apareceu. Desse modo, tanto Llewellyn como Percival
+são contadores de verdade.
+
+ Mas não pararei agora. Provarei que a sentença não pode ser false, seguindo o mesmo modelo e raciocínio apresentado acima.
+ Se eu considerar a sentança como falsa, isso quer dizer que Percival é mentiroso, então o símbolo A, que o representa, deve idem ser falso. E agora
+me deparo com um conflito lógico. Se A é falso, A' é verdadeiro, e uma expressão binária como A' || B, quando um de seus elementos é verdadeiro, ela
+o retorna. Então, A' || B, que considerei como falsa no princípio, termina como verdadeira, configurando-se como uma contradição. 
